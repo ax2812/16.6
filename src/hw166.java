@@ -40,8 +40,8 @@ public class hw166 extends JFrame {
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
 		
-		message p = new message(0);
-		add(p);
+		message p = new message(0);  // new message 並家到視窗中
+ 		add(p);
 		
 	}
 	
@@ -54,7 +54,7 @@ public class hw166 extends JFrame {
 		
 		public message(int s){
 			addMouseListener(new MouseListener(){
-				
+				//當滑鼠按時  產生變化
 				@Override
 				public void mouseClicked(MouseEvent e) {
 					
@@ -100,6 +100,7 @@ public class hw166 extends JFrame {
 				
 				
 			}
+//畫出文字
 			@Override
 			protected void paintComponent(Graphics g){
 				super.paintComponent(g);
